@@ -23,7 +23,7 @@ Open Bounties and RFPs for specific ideas that are identified by Bifrost core co
 
 ## Bounty Lifecycle
 
-- Go to the Issue section for this GItHub repo: https://github.com/zxstim/mono/issues
+- Go to the Issue section for this GItHub repo: https://github.com/bifrost-io/mono/issues
 - Use the proposal template to create a proposal describing your idea.
 - Upon receiving the `approved` tag for your issue, you can start working on the submission.
 - Once you are done with your submission, submit the open source GitHub repo links and deployed links for your submission in the previously created Issue.
