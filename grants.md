@@ -30,7 +30,7 @@ Bounties will be evaluated for:
 
 ## Bounty Lifecycle
 
-- Go to the Issue section for this GItHub repo: https://github.com/zxstim/mono
+- Go to the Issue section for this GItHub repo: https://github.com/zxstim/mono/issues
 - Use the proposal template to create a proposal describing your idea.
 - Upon receiving the `approved` tag for your issue, you can start working on the submission.
 - Once you are done with your submission, submit the open source GitHub repo links and deployed links for your submission in the previously created Issue.
