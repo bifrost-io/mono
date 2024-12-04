@@ -14,6 +14,12 @@ Open Bounties and RFPs for specific ideas that are identified by Bifrost core co
 - LST yield strategies integration - Implement LST leveraged yield strategies in yield farming protocols (Yearn, InstaDapp, DeFi Saver, Harvest)
 - On-chain game via LSTs - Create a simple fully onchain game PvP like “Rock, Paper, Scissors”  allowing players to wager vTokens staking rewards and play against each other.
 
+## Requirements
+
+- Fully open source is a requirement so please include all the relevant repos in your submission.
+- You can submit multiple times for the same project but each submission should have a key improvement to core features.
+- Your project should be deployed on a compatible testnet or mainnet. Check the list here.
+
 
 ## Bounty Lifecycle
 
