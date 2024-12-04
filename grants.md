@@ -15,19 +15,6 @@ Open Bounties and RFPs for specific ideas that are identified by Bifrost core co
 - On-chain game via LSTs - Create a simple fully onchain game PvP like “Rock, Paper, Scissors”  allowing players to wager vTokens staking rewards and play against each other.
 
 
-
-## Evaluation of proposals
-
-Bounties will be evaluated for:
-
-- Demand or use case
-- Technical feasibility and capability of the team, team track record
-- Project timelines and execution schedule
-- Competitiveness to similar bounty applications
-- Innovation and uniqueness
-- Vision (why build it? Is the project in line with the network’s overall goals?)
-- Product license - who and how can make use of products originating from the bounty (for example, code produced by a bounty is open source? What license?)
-
 ## Bounty Lifecycle
 
 - Go to the Issue section for this GItHub repo: https://github.com/zxstim/mono/issues
@@ -35,11 +22,12 @@ Bounties will be evaluated for:
 - Upon receiving the `approved` tag for your issue, you can start working on the submission.
 - Once you are done with your submission, submit the open source GitHub repo links and deployed links for your submission in the previously created Issue.
 - Bounty will be evaluated by the Bounty Committee
-    - Initial evaluation & feedback will be communicated with applicants up to 60 days from submission
-        - re-submission and adjustments could be required.
-- The Bounty Committee will vote on the approval of the application.
+    - Initial evaluation & feedback will be communicated with applicants up to 60 days from submission.
+    - re-submission and adjustments could be required.
+    - We will assign a bounty amount based on the quality of the submission.
+- The Bounty Committee will vote to approve payment of the proposal.
     - The committee can decide to accept the application in whole / partially or reject it.
-- The Bounty Committee will communicate their decision (approval or rejection) to the applicant.
+- The Bounty Committee will communicate their decision (approval or rejection) to the applicant. Your issue will be marked `cleared` after payout has been approved and `paid` after payout has been transferred.
 - Accepted bounty applications will be published on the [Bifrost forum](https://bifrost.subsquare.io/).
 
 ## Resources
