@@ -1,4 +1,4 @@
-# Open Bounties & Requests for Proposals (RFPs)
+# Bifrost Builder Program
 
 Open Bounties and RFPs for specific ideas that are identified by Bifrost core contributors.  If you have the skills, expertise and experience to create, develop and deliver, we want to hear from you! **Its time to join our Revolution!**
 
@@ -12,7 +12,7 @@ Open Bounties and RFPs for specific ideas that are identified by Bifrost core co
 - LST index - Build a dedicated swap and yield optimization platform for all Bifrost ecosystem vTokens. Deposit any Bifrost vToken and in return receive an index token. Examples like UnshETH.
 - Asymmetric staking yield distribution protocol - “gamifying liquid staking” - Build a decentralised, non custodial protocol for asymmetric yields distribution generating from staking. Staking yield is periodically distributed by the protocol between pool participants randomly and asymmetrically making staking more fun. Examples like Asymetrix Protocol.
 - LST yield strategies integration - Implement LST leveraged yield strategies in yield farming protocols (Yearn, InstaDapp, DeFi Saver, Harvest)
-- On-chain game via LSTs - Create a simple fully onchain game PvP like “Rock, Paper, Scissors”  allowing players to wager vTokens staking rewards and play against each other.
+- On-chain game via LSTs - Create a simple fully onchain game PvP like “Rock, Paper, Scissors” allowing players to wager vTokens staking rewards and play against each other.
 
 ## Requirements
 
@@ -28,8 +28,8 @@ Open Bounties and RFPs for specific ideas that are identified by Bifrost core co
 - Upon receiving the `approved` tag for your issue, you can start working on the submission.
 - Once you are done with your submission, submit the open source GitHub repo links and deployed links for your submission in the previously created Issue.
 - Bounty will be evaluated by the Bounty Committee
-    - Initial evaluation & feedback will be communicated with applicants up to 60 days from submission.
-    - re-submission and adjustments could be required.
+    - Initial evaluation & feedback will be communicated with applicants as soon as possible from the date of submission.
+    - Re-submission and adjustments could be required.
     - We will assign a bounty amount based on the quality of the submission.
 - The Bounty Committee will vote to approve payment of the proposal.
     - The committee can decide to accept the application in whole / partially or reject it.
