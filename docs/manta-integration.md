@@ -87,7 +87,7 @@ Next, you want to call the function `estimateSendAndCallFee` to get the mint fee
 
 | Variable | Input value | Definition | 
 |---|---|---|
-| `address assetAddress` | `0x95A4D4b345c551A9182289F9dD7A018b7Fd0f940` | Address of `MANTA` token |
+| `address assetAddress` | `0x95CeF13441Be50d20cA4558CC0a27B601aC544E5` | Address of `MANTA` token |
 | `uint256 amount` | `uint256` | Amount of `MANTA` token be used to mint to `vMANTA` |
 | `uint32 channel_id` | `0` | ID of the channel |
 | `uint64 dstGasForCall` | `4000000` | Destination gas for call |
@@ -124,6 +124,63 @@ async function getMinAmount() {
 }
 ```
 
+`estimateSendAndCallFee`
+
+```ts
+const sendAndCallFee = await publicClient.readContract({
+  address: "0x95A4D4b345c551A9182289F9dD7A018b7Fd0f940",
+  abi: mantaSLPxAbi,
+  functionName: "estimateSendAndCallFee",
+  args: [
+    "0x95CeF13441Be50d20cA4558CC0a27B601aC544E5", // MANTA token
+    parseUnits(3, 18), // amount
+    0, // channel_id
+    4000000, // dstGasForCall
+    encodePacked(["uint16", "uint256"], [1, BigInt(4200000)]), // adapterParams
+  ],
+});
+console.log("sendAndCallFee", sendAndCallFee);
+
+// Output: sendAndCallFee 83556372916216n
+```
 Last call returns a value of `83556372916216` equal to `0.000083556372916216 ETH`.
 
-Then, to mint `vMANTA` with `MANTA`, call the `create_order` function with the same inputs
+Then, to mint `vMANTA` with `MANTA`, call `approve` on `MANTA` token contract to the `MantaPacificSlpx` contract, then call the `create_order` function with the same inputs as `estimateSendAndCallFee`.
+
+```ts
+const { request: approvalRequest } = await publicClient.simulateContract({
+  account: currentAddress, // connected address
+  address: "0x95CeF13441Be50d20cA4558CC0a27B601aC544E5",
+  abi: erc20Abi,
+  functionName: "approve",
+  args: [
+    "0x95A4D4b345c551A9182289F9dD7A018b7Fd0f940",
+    parseUnits(3, 18),
+  ],
+});
+let approvalHash = await walletClient.writeContract(approvalRequest);
+console.log("approvalHash", approvalHash);
+
+const { request: mintRequest } = await publicClient.simulateContract({
+  account: currentAddress, // connected address
+  address: "0x95A4D4b345c551A9182289F9dD7A018b7Fd0f940",
+  abi: mantaSLPxAbi,
+  functionName: "create_order",
+  args: [
+    "0x95CeF13441Be50d20cA4558CC0a27B601aC544E5", // MANTA token address
+    parseUnits(3, 18), // amount
+    0, // channel_id
+    4000000, // dstGasForCall
+    encodePacked(["uint16", "uint256"], [1, BigInt(4200000)]), // adapterParams
+  ],
+  value: sendAndCallFee as bigint,
+});
+
+hash = await walletClient.writeContract(request);
+transaction = await publicClient.waitForTransactionReceipt({
+  hash: hash,
+});
+console.log("hash", hash);
+```
+
+Then wait for 8 to 10 minutes to receive the `vMANTA` token in the caller address.
