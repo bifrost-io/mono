@@ -95,10 +95,16 @@ Next, you want to call the function `estimateSendAndCallFee` to get the mint fee
 
 **adapterParams encoding**
 
-With `Ethers.js v5.7`, you can use `solidityPack` function
+With `Ethers.js v5`, you can use `solidityPack` function
 
 ```ts
 ethers.utils.solidityPack(["uint16", "uint256"], [1, 4200000])
+```
+
+With `Ethers.js v6` 
+
+```ts
+solidityPacked(["uint16", "uint256"], [1, 4200000])
 ```
 
 With `Viem`, you can use `encodePacked` function
