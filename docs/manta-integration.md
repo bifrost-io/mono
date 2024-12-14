@@ -118,16 +118,14 @@ encodePacked(["uint16", "uint256"], [1, 4200000])
 `minAmount`
 
 ```ts
-async function getMinAmount() {
-  const minAmount = await publicClient.readContract({
-    address: "0x95CeF13441Be50d20cA4558CC0a27B601aC544E5",
-    abi: mantaSLPxAbi,
-    functionName: "minAmount",
-  });
-  console.log("minAmount", minAmount);
+const minAmount = await publicClient.readContract({
+  address: "0x95CeF13441Be50d20cA4558CC0a27B601aC544E5",
+  abi: mantaSLPxAbi,
+  functionName: "minAmount",
+});
+console.log("minAmount", minAmount);
 
-  // Output: minAmount 2000000000000000000n
-}
+// Output: minAmount 2000000000000000000n
 ```
 
 `estimateSendAndCallFee`
@@ -187,6 +185,92 @@ transaction = await publicClient.waitForTransactionReceipt({
   hash: hash,
 });
 console.log("hash", hash);
+```
+
+Then wait for 8 to 10 minutes to receive the `vMANTA` token in the caller address.
+
+### Example Wagmi integration
+
+`minAmount`
+
+```ts
+const { data: minAmount } = useReadContract({
+  ...wagmiContractConfig,
+  address: "0x95CeF13441Be50d20cA4558CC0a27B601aC544E5",
+  abi: mantaSLPxAbi,
+  functionName: "minAmount",
+});
+console.log("minAmount", minAmount);
+
+// Output: minAmount 2000000000000000000n
+```
+
+`estimateSendAndCallFee`
+
+```ts
+const { data: sendAndCallFee } = useReadContract({
+  ...wagmiContractConfig,
+  address: "0x95A4D4b345c551A9182289F9dD7A018b7Fd0f940",
+  abi: mantaSLPxAbi,
+  functionName: "estimateSendAndCallFee",
+  args: [
+    "0x95CeF13441Be50d20cA4558CC0a27B601aC544E5", // MANTA token
+    parseUnits(3, 18), // amount
+    0, // channel_id
+    4000000, // dstGasForCall
+    encodePacked(["uint16", "uint256"], [1, BigInt(4200000)]), // adapterParams
+  ],
+});
+console.log("sendAndCallFee", sendAndCallFee);
+
+// Output: sendAndCallFee 83556372916216n
+```
+Last call returns a value of `83556372916216` equal to `0.000083556372916216 ETH`.
+
+Then, to mint `vMANTA` with `MANTA`, call `approve` on `MANTA` token contract to the `MantaPacificSlpx` contract, then call the `create_order` function with the same inputs as `estimateSendAndCallFee`.
+
+```ts
+const { 
+  data: hash,
+  error,
+  isPending, 
+  writeContract 
+} = useWriteContract() 
+
+async function approveLstContract() {
+  writeContract({
+    account: currentAddress, // connected address
+    address: "0x95CeF13441Be50d20cA4558CC0a27B601aC544E5",
+    abi: erc20Abi,
+    functionName: "approve",
+    args: [
+      "0x95A4D4b345c551A9182289F9dD7A018b7Fd0f940",
+      parseUnits(3, 18),
+    ],
+  })
+}
+
+async function mintLst() {
+  writeContract({
+    account: currentAddress, // connected address
+    address: "0x95A4D4b345c551A9182289F9dD7A018b7Fd0f940",
+    abi: mantaSLPxAbi,
+    functionName: "create_order",
+    args: [
+      "0x95CeF13441Be50d20cA4558CC0a27B601aC544E5", // MANTA token address
+      parseUnits(3, 18), // amount
+      0, // channel_id
+      4000000, // dstGasForCall
+      encodePacked(["uint16", "uint256"], [1, BigInt(4200000)]), // adapterParams
+    ],
+    value: sendAndCallFee as bigint,
+  })
+}
+
+const { isLoading: isConfirming, isSuccess: isConfirmed } = 
+  useWaitForTransactionReceipt({ 
+    hash, 
+})
 ```
 
 Then wait for 8 to 10 minutes to receive the `vMANTA` token in the caller address.
