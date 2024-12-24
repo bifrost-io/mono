@@ -68,3 +68,41 @@ Or manual input with the information below
 | Source code | [MoonbeamSlpx.sol](https://github.com/bifrost-io/slpx-contracts/blob/main/contracts/MoonbeamSlpx.sol) |
 | ABI | [MoonbeamSlpx.json](https://github.com/bifrost-io/slpx-contracts/blob/main/deployments/moonbeam/MoonbeamSlpx.json) |
 
+`create_order`  
+```solidity
+/**
+  * @dev Create order to mint vAsset or redeem vAsset on bifrost chain
+  * @param assetAddress The address of the asset to mint or redeem
+  * @param amount The amount of the asset to mint or redeem
+  * @param dest_chain_id When order is executed on Bifrost, Asset/vAsset will be transferred to this chain
+  * @param receiver The receiver address on the destination chain, 20 bytes for EVM, 32 bytes for Substrate
+  * @param remark The remark of the order, less than 32 bytes. For example, "OmniLS"
+  * @param channel_id The channel id of the order, you can set it. Bifrost chain will use it to share reward.
+  **/
+  function create_order(
+      address assetAddress,
+      uint128 amount,
+      uint64 dest_chain_id,
+      bytes memory receiver,
+      string memory remark,
+      uint32 channel_id
+  ) external payable;
+```
+
+| Variable | Input value | Definition | 
+|---|---|---|
+| `address assetAddress` | a valid Moonbeam token contract address | Address of different tokens on Moonbeam |
+| `uint128 amount` | `uint128` | Amount of tokens to mint or redeem |
+| `uint64 dest_chain_id` | `1284` | Chain ID of Moonbeam |
+| `bytes memory receiver` | a valid Moonbeam address | Asset receiver address on the destination chain, 20 bytes for EVM |
+| `string memory remark` | `string` of less than 32 bytes | A string used to identify the order |
+| `uint32 channel_id` | `uint32` | Channel ID of the order. Used for the Bifrost Protocol Revenue Sharing Program (RSP). You can set it if you have one. Check [here](https://docs.bifrost.io/for-partners/reward-share-program-rsp) to learn more |
+
+
+**Token address list**
+
+| Token | Address |
+|---|---|
+| `xcDOT` | `0xFfFFfFff1FcaCBd218EDc0EbA20Fc2308C778080` |
+| `xcASTR` | `0xFfFFFfffA893AD19e540E172C10d78D4d479B5Cf` |
+| `GLMR` | `0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE` as per [ERC-7528](https://eips.ethereum.org/EIPS/eip-7528). Only use this for frontend identification |
