@@ -51,6 +51,15 @@ Or manual input with the information below
 | Symbol | `xcvASTR` |
 | Decimals | 18 |
 
+### `GLMR` token
+
+| Name | Value |
+|---|---|
+| Address | [0x0000000000000000000000000000000000000802](https://moonscan.io/address/0x0000000000000000000000000000000000000802) |
+| Name | GLMR |
+| Symbol | `GLMR` |
+| Decimals | 18 |
+
 ### `xcvGLMR` token
 
 | Name | Value |
@@ -94,7 +103,7 @@ Or manual input with the information below
 | `address assetAddress` | a valid Moonbeam token contract address | Address of different tokens on Moonbeam |
 | `uint128 amount` | `uint128` | Amount of tokens to mint or redeem |
 | `uint64 dest_chain_id` | `1284` | Chain ID of Moonbeam |
-| `bytes memory receiver` | a valid Moonbeam address | Asset receiver address on the destination chain, 20 bytes for EVM |
+| `bytes memory receiver` | a valid Moonbeam public key | Asset receiver address on the destination chain, 20 bytes public key for EVM |
 | `string memory remark` | `string` of less than 32 bytes | A string used to identify the order |
 | `uint32 channel_id` | `uint32` | Channel ID of the order. Used for the Bifrost Protocol Revenue Sharing Program (RSP). You can set it if you have one. Check [here](https://docs.bifrost.io/for-partners/reward-share-program-rsp) to learn more |
 
@@ -105,4 +114,9 @@ Or manual input with the information below
 |---|---|
 | `xcDOT` | `0xFfFFfFff1FcaCBd218EDc0EbA20Fc2308C778080` |
 | `xcASTR` | `0xFfFFFfffA893AD19e540E172C10d78D4d479B5Cf` |
-| `GLMR` | `0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE` as per [ERC-7528](https://eips.ethereum.org/EIPS/eip-7528). Only use this for frontend identification |
+| `GLMR` | `0x0000000000000000000000000000000000000802` |
+
+
+**Waiting time**
+
+Then wait for 45 to 60 seconds after transaction confirmation to receive the `vAsset` token in the caller address.
