@@ -137,10 +137,6 @@ operationalMin   uint256  :  5000000000000000000
 | `uint32 channel_id` | `uint32` | Channel ID of the order. Used for the Bifrost Protocol Revenue Sharing Program (RSP). You can set it if you have one. Check [here](https://docs.bifrost.io/for-partners/reward-share-program-rsp) to learn more |
 
 
-`addressToAssetInfo`
-
-`mapping(address => AssetInfo) public addressToAssetInfo;`
-
 **Token address list**
 
 | Token | Address |
@@ -154,10 +150,105 @@ operationalMin   uint256  :  5000000000000000000
 
 | Token | currencyId | operationalMin |
 |---|---|---|
-| `xcDOT` | `0x0801` | `5000000000000000000` |
-| `xcASTR` | `0x0802` | `5000000000000000000` |
-| `GLMR` | `0x0803` | `5000000000000000000` |
+| `xcDOT` | `0x0800` | 10000000000 (`10_000_000_000`) |
+| `xcASTR` | `0x0803` | 5000000000000000000 (`5_000_000_000_000_000_000`) |
+| `GLMR` | `0x0801` | 5000000000000000000 (`5_000_000_000_000_000_000`) |
 
 **Waiting time**
 
 Then wait for 45 to 60 seconds after transaction confirmation to receive the `vAsset` token in the caller address.
+
+### Example Wagmi integration
+
+`addressToAssetInfo`
+
+```ts
+const { data: assetInfo } = useReadContract({
+  ...wagmiContractConfig,
+  address: "0xF1d4797E51a4640a76769A50b57abE7479ADd3d8",
+  abi: moonbeamSLPxAbi,
+  functionName: "addressToAssetInfo",
+  args: ["0x0000000000000000000000000000000000000802"],
+});
+console.log("assetInfo", assetInfo);
+
+// Output: assetInfo { currencyId: '0x0801', operationalMin: 5000000000000000000n }
+```
+
+`create_order`
+
+**for ERC20 token**
+```ts
+const { 
+  data: hash,
+  error,
+  isPending, 
+  writeContract 
+} = useWriteContract() 
+
+async function approveLstContract() {
+  writeContract({
+    account: currentAddress, // connected address
+    address: "0xFfFFfFff1FcaCBd218EDc0EbA20Fc2308C778080",
+    abi: erc20Abi,
+    functionName: "approve",
+    args: [
+      "0xF1d4797E51a4640a76769A50b57abE7479ADd3d8",
+      parseUnits(1, 10), // 1 xcDOT is operationalMin and 10 is the token decimals
+    ],
+  })
+}
+
+async function mintLst() {
+  writeContract({
+    address: "0xF1d4797E51a4640a76769A50b57abE7479ADd3d8",
+    abi: moonbeamSLPxAbi,
+    functionName: "create_order",
+    args: [
+      "0xFfFFfFff1FcaCBd218EDc0EbA20Fc2308C778080", // xcDOT token address 
+      parseUnits(1, 10), // amount
+      1284, // Moonbeam chain id
+      receiverAddress, // receiver
+      "bifrost", // sample remark
+      0, // sample channel_id
+    ],
+  })
+}
+
+const { isLoading: isConfirming, isSuccess: isConfirmed } = 
+  useWaitForTransactionReceipt({ 
+    hash, 
+})
+```
+
+**for GLMR token**
+```ts
+const { 
+  data: hash,
+  error,
+  isPending, 
+  writeContract 
+} = useWriteContract()
+
+async function mintLst() {
+  writeContract({
+    address: "0xF1d4797E51a4640a76769A50b57abE7479ADd3d8",
+    abi: moonbeamSLPxAbi,
+    functionName: "create_order",
+    args: [
+      "0x0000000000000000000000000000000000000802", // xcDOT token address 
+      parseUnits(5, 18), // amount
+      1284, // Moonbeam chain id
+      receiverAddress, // receiver
+      "bifrost", // sample remark
+      0, // sample channel_id
+    ],
+    value: parseUnits(5, 18) // 5 GLMR
+  })
+}
+
+const { isLoading: isConfirming, isSuccess: isConfirmed } = 
+  useWaitForTransactionReceipt({ 
+    hash, 
+})
+```
