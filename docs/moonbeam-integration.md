@@ -77,6 +77,35 @@ Or manual input with the information below
 | Source code | [MoonbeamSlpx.sol](https://github.com/bifrost-io/slpx-contracts/blob/main/contracts/MoonbeamSlpx.sol) |
 | ABI | [MoonbeamSlpx.json](https://github.com/bifrost-io/slpx-contracts/blob/main/deployments/moonbeam/MoonbeamSlpx.json) |
 
+## Integration
+
+MoonbeamSLPx contract does not support atomic contract calls. That means you can't integrate within your contract logic. The reason are as follows:
+- there is a wait time of about 45 to 60 to receive the `vAsset` token.
+
+However, you can still interact with the contract directly from the frontend or use another contract but the call is structured at the end of the logic.
+
+There are 2 main functions you use to integrate with `MoonbeamSlpx`:
+
+`addressToAssetInfo` (derived from the public mapping `addressToAssetInfo`) 
+```solidity
+function addressToAssetInfo(address assetAddress) public view returns (currencyId bytes2, operationalMin uint256)
+```
+
+Sample call
+
+```solidity
+MoonbeamSlpx.addressToAssetInfo(0x0000000000000000000000000000000000000802)
+```
+
+Sample return
+
+```bash
+currencyId       bytes2   :  0x0801
+operationalMin   uint256  :  5000000000000000000
+```
+
+
+
 `create_order`  
 ```solidity
 /**
@@ -108,6 +137,10 @@ Or manual input with the information below
 | `uint32 channel_id` | `uint32` | Channel ID of the order. Used for the Bifrost Protocol Revenue Sharing Program (RSP). You can set it if you have one. Check [here](https://docs.bifrost.io/for-partners/reward-share-program-rsp) to learn more |
 
 
+`addressToAssetInfo`
+
+`mapping(address => AssetInfo) public addressToAssetInfo;`
+
 **Token address list**
 
 | Token | Address |
@@ -116,6 +149,14 @@ Or manual input with the information below
 | `xcASTR` | `0xFfFFFfffA893AD19e540E172C10d78D4d479B5Cf` |
 | `GLMR` | `0x0000000000000000000000000000000000000802` |
 
+
+**Asset Info List**
+
+| Token | currencyId | operationalMin |
+|---|---|---|
+| `xcDOT` | `0x0801` | `5000000000000000000` |
+| `xcASTR` | `0x0802` | `5000000000000000000` |
+| `GLMR` | `0x0803` | `5000000000000000000` |
 
 **Waiting time**
 
