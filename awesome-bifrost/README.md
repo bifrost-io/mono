@@ -9,3 +9,5 @@ This page introduces all links related to core and ecosystem development of Bifr
 > DISCLAIMER: The list is updated and maintained by the Bifrost Community. Use below tools and links at your own risk.
 
 ## Contents
+
+- [buildstation dotUI](https://github.com/buildstationorg/dotui)
