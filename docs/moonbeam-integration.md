@@ -132,7 +132,7 @@ operationalMin   uint256  :  5000000000000000000
 | `address assetAddress` | a valid Moonbeam token contract address | Address of different tokens on Moonbeam |
 | `uint128 amount` | `uint128` | Amount of tokens to mint or redeem |
 | `uint64 dest_chain_id` | `1284` | Chain ID of Moonbeam |
-| `bytes memory receiver` | a valid Moonbeam public key | Asset receiver address on the destination chain, 20 bytes public key for EVM |
+| `bytes memory receiver` | a valid Moonbeam address | Asset receiver address on the destination chain, 20 bytes address for EVM |
 | `string memory remark` | `string` of less than 32 bytes | A string used to identify the order |
 | `uint32 channel_id` | `uint32` | Channel ID of the order. Used for the Bifrost Protocol Revenue Sharing Program (RSP). You can set it if you have one. Check [here](https://docs.bifrost.io/for-partners/reward-share-program-rsp) to learn more |
 
