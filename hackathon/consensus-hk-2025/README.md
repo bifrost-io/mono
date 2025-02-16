@@ -4,7 +4,7 @@
 Bifrost is a Liquid Staking app-chain tailored for all blockchains, utilizing decentralized cross-chain interoperability to empower users to earn staking rewards and DeFi yields with flexibility, liquidity, and high security across multiple chains.
 
 ## Challenge details
-**Create a unique and optimal UX for interacting with Bifrost Liquid Staking Tokens available on many chains**
+**Create a unique and optimal UX for interacting with Bif rost Liquid Staking Tokens available on many chains**
 
 To achieve this, you can:
 - Create a new frontend experience for mint/redeem/track with Bifrost Liquid Staking Tokens
