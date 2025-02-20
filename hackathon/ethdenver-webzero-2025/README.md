@@ -30,7 +30,7 @@ To achieve this, you can:
 - Your project should be deployed on a compatible testnet or mainnet. Check the [list](https://docs.bifrost.io/for-builders/build-with-slpx/supported-networks) here.
 
 ## Submission guidelines
-- Go to the Issue section for this GItHub repo: https://github.com/bifrost-io/mono/issues
+- Go to the Issue section for this GitHub repo: https://github.com/bifrost-io/mono/issues
 - Use the proposal template to create a proposal describing your idea.
 - Upon receiving the `approved` tag for your issue, you can start working on the submission.
 - Once you are done with your submission, submit the open source GitHub repo links and deployed links for your submission in the previously created Issue.

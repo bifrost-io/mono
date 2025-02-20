@@ -30,7 +30,7 @@ To achieve this, you can:
 - Your project should be deployed on a compatible testnet or mainnet. Check the [list](https://docs.bifrost.io/for-builders/build-with-slpx/supported-networks) here.
 
 ## Submission guidelines
-- Go to the Issue section for this GItHub repo: https://github.com/bifrost-io/mono/issues
+- Go to the Issue section for this GitHub repo: https://github.com/bifrost-io/mono/issues
 - Use the proposal template to create a proposal describing your idea.
 - Upon receiving the `approved` tag for your issue, you can start working on the submission.
 - Once you are done with your submission, submit the open source GitHub repo links and deployed links for your submission in the previously created Issue.
@@ -42,6 +42,16 @@ To achieve this, you can:
     - The committee can decide to accept the application in whole / partially or reject it.
 - The Grant Committee will communicate their decision (approval or rejection) to the applicant. Your issue will be marked `cleared` after payout has been approved and `paid` after payout has been transferred.
 - Accepted grant applications will be published on the [Bifrost forum](https://bifrost.subsquare.io/).
+- For receiving the grant, you need to provide your Bifrost wallet address. Follow these steps:
+  - Create a repository in your GitHub account named `bifrost-io`.
+  - Create a file inside the repository named `funding.json`.
+  - Add the following JSON to the file:
+  ```
+  {
+    "bifrost": "your_bifrost_wallet_address" 
+  }
+  ```
+  - Wait for payout
 
 ## Resources
 - Docs for human: [https://docs.bifrost.io](https://docs.bifrost.io) 
