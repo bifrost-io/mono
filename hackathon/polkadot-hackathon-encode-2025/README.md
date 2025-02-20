@@ -42,6 +42,16 @@ To achieve this, you can:
     - The committee can decide to accept the application in whole / partially or reject it.
 - The Grant Committee will communicate their decision (approval or rejection) to the applicant. Your issue will be marked `cleared` after payout has been approved and `paid` after payout has been transferred.
 - Accepted grant applications will be published on the [Bifrost forum](https://bifrost.subsquare.io/).
+- For receiving the grant, you need to provide your Bifrost wallet address. Follow these steps:
+  - Create a repository in your GitHub account named `bifrost-io`.
+  - Create a file inside the repository named `funding.json`.
+  - Add the following JSON to the file:
+  ```
+  {
+    "bifrost": "your_bifrost_wallet_address" 
+  }
+  ```
+  - Wait for payout
 
 ## Resources
 - Docs for human: [https://docs.bifrost.io](https://docs.bifrost.io) 
