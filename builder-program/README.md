@@ -1,4 +1,6 @@
-# Bifrost Builder Program
+![banner image](/images/arrival-of-spring.png)
+# ARRIVAL OF SPRING 🌸
+> Spring season for Bifrost Builder Program
 
 Open Bounties and RFPs for specific ideas that are identified by Bifrost core contributors.  If you have the skills, expertise and experience to create, develop and deliver, we want to hear from you! **Its time to join our Revolution!**
 
