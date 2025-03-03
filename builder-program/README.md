@@ -2,19 +2,23 @@
 # ARRIVAL OF SPRING 🌸
 > Spring season for Bifrost Builder Program
 
-Open Bounties and RFPs for specific ideas that are identified by Bifrost core contributors.  If you have the skills, expertise and experience to create, develop and deliver, we want to hear from you! **Its time to join our Revolution!**
+Open Bounties, RFPs for ideas that are identified by Bifrost core contributors.  If you have the skills, expertise and experience to create, develop and deliver, we want to hear from you! 
+
+**Its time to join the DeFi Revolution!**
 
 ## Ideas
 
-- DeFi LST Data Dashboard - An interactive tool that compares yield and LP opportunities on Bifrost vs other LST protocols This tool would show current yield, historical yield, and other metrics.
-- LST Yield trading protocol - Build a permissionless yield-trading protocol where users can execute various yield management strategies for their vTokens - fixed yield (i.e. earn fixed yield on vDOT), long yield (i.e. bet on vDOT yield going up by purchasing more yield). Examples like Pendle Finance, Spectra, Flashstake.
-- Project LaunchPad - Build a project launchpad where projects obtain bootstrap funds by raising and locking vTokens to receive Staking Rewards. In return, vToken stakers will receive the project's Native Token. After the vToken lock-up period ends, it will be automatically returned to the stakers.
-- Lossless Prediction Market - Build a Lossless Prediction Market for vToken, where users accumulate a fund pool using vToken's Staking Reward, and periodically earn rewards from the fund pool by predicting token prices or real-world assets or events.
-- LST Backed Stablecoin - Build a decentralised yield bearing stablecoin backed by Bifrost vToken. Examples like Prisma Finance, Lybra Finance
-- LST index - Build a dedicated swap and yield optimization platform for all Bifrost ecosystem vTokens. Deposit any Bifrost vToken and in return receive an index token. Examples like UnshETH.
-- Asymmetric staking yield distribution protocol - “gamifying liquid staking” - Build a decentralised, non custodial protocol for asymmetric yields distribution generating from staking. Staking yield is periodically distributed by the protocol between pool participants randomly and asymmetrically making staking more fun. Examples like Asymetrix Protocol.
-- LST yield strategies integration - Implement LST leveraged yield strategies in yield farming protocols (Yearn, InstaDapp, DeFi Saver, Harvest)
-- On-chain game via LSTs - Create a simple fully onchain game PvP like “Rock, Paper, Scissors” allowing players to wager vTokens staking rewards and play against each other.
+| Project Type | Description | Examples |
+|-------------|-------------|-----------|
+| DeFi LST Data Dashboard | An interactive tool that compares yield and LP opportunities on Bifrost vs other LST protocols. This tool would show current yield, historical yield, and other metrics. | - |
+| LST Yield Trading Protocol | Build a permissionless yield-trading protocol where users can execute various yield management strategies for their vTokens - fixed yield (i.e. earn fixed yield on vDOT), long yield (i.e. bet on vDOT yield going up by purchasing more yield). | Pendle Finance, Spectra, Flashstake |
+| Project LaunchPad | Build a project launchpad where projects obtain bootstrap funds by raising and locking vTokens to receive Staking Rewards. In return, vToken stakers will receive the project's Native Token. After the vToken lock-up period ends, it will be automatically returned to the stakers. | - |
+| Lossless Prediction Market | Build a Lossless Prediction Market for vToken, where users accumulate a fund pool using vToken's Staking Reward, and periodically earn rewards from the fund pool by predicting token prices or real-world assets or events. | - |
+| LST Backed Stablecoin | Build a decentralised yield bearing stablecoin backed by Bifrost vToken. | Prisma Finance, Lybra Finance |
+| LST Index | Build a dedicated swap and yield optimization platform for all Bifrost ecosystem vTokens. Deposit any Bifrost vToken and in return receive an index token. | UnshETH |
+| Asymmetric Staking Yield Distribution Protocol | Build a decentralised, non custodial protocol for asymmetric yields distribution generating from staking. Staking yield is periodically distributed by the protocol between pool participants randomly and asymmetrically making staking more fun. | Asymetrix Protocol |
+| LST Yield Strategies Integration | Implement LST leveraged yield strategies in yield farming protocols. | Yearn, InstaDapp, DeFi Saver, Harvest |
+| On-chain Game via LSTs | Create a simple fully onchain game PvP like "Rock, Paper, Scissors" allowing players to wager vTokens staking rewards and play against each other. | - |
 
 ## Requirements
 
