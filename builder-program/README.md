@@ -41,6 +41,17 @@ Open Bounties, RFPs for ideas that are identified by Bifrost core contributors. 
     - The committee can decide to accept the application in whole / partially or reject it.
 - The Bounty Committee will communicate their decision (approval or rejection) to the applicant. Your issue will be marked `cleared` after payout has been approved and `paid` after payout has been transferred.
 - Accepted bounty applications will be published on the [Bifrost forum](https://bifrost.subsquare.io/).
+- For receiving the grant, you need to provide your Bifrost wallet address. Follow these steps:
+  - Create a repository in your GitHub account named `bifrost-io`.
+  - Create a file inside the repository named `funding.json`.
+  - Add the following JSON to the file:
+  ```
+  {
+    "bifrost": "your_bifrost_wallet_address" 
+  }
+  ```
+  - An example can be found here [https://github.com/zxstim/bifrost-io/blob/main/funding.json](https://github.com/zxstim/bifrost-io/blob/main/funding.json)
+  - Wait for payout
 
 ## Resources
 
