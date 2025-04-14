@@ -58,7 +58,8 @@ To achieve this, you can:
 - Mono repo: [https://github.com/bifrost-io/mono](https://github.com/bifrost-io/mono)
 - Builder program: [https://github.com/bifrost-io/mono/tree/main/builder-program](https://github.com/bifrost-io/mono/tree/main/builder-program)
 - AI friendly docs: [https://github.com/bifrost-io/mono/blob/main/docs](https://github.com/bifrost-io/mono/blob/main/docs) 
-- Testnet kit: [https://github.com/buildstationorg/bifrost-testnetkit](https://github.com/buildstationorg/bifrost-testnetkit) 
+- Testnet kit: [https://github.com/buildstationorg/bifrost-testnetkit](https://github.com/buildstationorg/bifrost-testnetkit)
+- Workshop presentation video: [https://youtu.be/LCEPFVbm7YQ?si=pknjO90dzJC-Gsy1](https://youtu.be/LCEPFVbm7YQ?si=pknjO90dzJC-Gsy1)
 
 ## Prizes
 - $300 - $1000+ depending on the submission quality
