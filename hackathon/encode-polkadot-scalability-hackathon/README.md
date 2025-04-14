@@ -1,4 +1,4 @@
-# Bifrost ETH Denver WebZero Hackerhouse challenge
+# Bifrost Encode Polkadot Scalability Hackathon
 
 ## Context
 Bifrost is a Liquid Staking app-chain tailored for all blockchains, utilizing decentralized cross-chain interoperability to empower users to earn staking rewards and DeFi yields with flexibility, liquidity, and high security across multiple chains.
