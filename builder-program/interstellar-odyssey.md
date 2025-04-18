@@ -1,6 +1,6 @@
 ![banner image](/images/interstellar-odyssey.png)
 # INTERSTELLAR ODYSSEY 🛰️
-> Conquer the frontier
+> Journey to singularity
 
 ## Overview
 
