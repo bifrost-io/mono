@@ -1,6 +1,6 @@
-![banner image](/images/arrival-of-spring.png)
-# ARRIVAL OF SPRING 🌸
-> Spring season for Bifrost Builder Program
+![banner image](/images/onchain-summer.png)
+# ONCHAIN SUMMER ☀️
+> Summer season for Bifrost Builder Program
 
 Open Bounties, RFPs for ideas that are identified by Bifrost core contributors.  If you have the skills, expertise and experience to create, develop and deliver, we want to hear from you! 
 
@@ -61,3 +61,5 @@ Open Bounties, RFPs for ideas that are identified by Bifrost core contributors. 
 - [SLPx - The revolution begins](https://bifrost-finance.medium.com/slpx-pallet-a-further-step-into-the-omni-chain-liquid-staking-68cb4d99c82f).
 - [SLPx - Integration for Builders](https://docs.bifrost.finance/builders/liquid-staking-x-slpx/overview).
 - [Omni LS DApp - Building on top of SLPx.](https://bifrost-finance.medium.com/omni-ls-dapp-the-easiest-fastest-and-most-secure-way-to-access-bifrost-liquid-staking-tokens-21ee080b03cd)
+
+- Developer kit: https://github.com/buildstationorg/bifrost-dev-kit
