@@ -56,6 +56,6 @@ To achieve this, you can:
 ## Prizes
 - $300 - $1000 depending on the quality of the submission (generally each submission is within range). If your submission is beyond expectation, we will increase payout accordingly.
 - Check the `closed` issues tab for more details [https://github.com/bifrost-io/mono/issues?q=is%3Aissue%20state%3Aclosed](https://github.com/bifrost-io/mono/issues?q=is%3Aissue%20state%3Aclosed)
-
+- The public pot is viewable on [Mimir Bifrost Grant Fund](https://app.mimir.global/?address=136qTNfobHieiT4CHYLwNcrjUj92YBYV8BViaj49LCx5AW5z&network=bifrost-polkadot&tab=asset)
 ## Post hackathon resources
 For participants, we will be giving more grants, technical support and a marketing intern to help you launch your project; plus we have a revenue share program for you to create a sustainable revenue stream from day one.
