@@ -14,6 +14,8 @@ To achieve this, you can:
 - **User Experience**: How easy is the app to use?
 - **Technical Implementation**: How well is the app implemented?
 
+**Note:** Bifrost does not discourage the use of AI. But be mindful of the issue that AI generated code could be.
+
 ## Requirements
 - Fully open source is a requirement so please include all the relevant repos in your submission.
 - You can submit multiple times for the same project for additional grants but each submission should have a key improvement to core features.
@@ -52,7 +54,8 @@ To achieve this, you can:
 - Ask any questions by tagging [@FrostyLst](https://x.com/FrostyLst)
 
 ## Prizes
-- $300 - $1000+ depending on the submission quality
+- $300 - $1000 depending on the quality of the submission (generally each submission is within range). If your submission is beyond expectation, we will increase payout accordingly.
+- Check the `closed` issues tab for more details [https://github.com/bifrost-io/mono/issues?q=is%3Aissue%20state%3Aclosed](https://github.com/bifrost-io/mono/issues?q=is%3Aissue%20state%3Aclosed)
 
 ## Post hackathon resources
 For participants, we will be giving more grants, technical support and a marketing intern to help you launch your project; plus we have a revenue share program for you to create a sustainable revenue stream from day one.
