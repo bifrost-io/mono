@@ -59,7 +59,7 @@ To achieve this, you can:
 - Ask any questions by tagging [@FrostyLst](https://x.com/FrostyLst)
 
 ## Prizes
-- Individual awards range from 300 USDT to 1000 USDT, with specific amounts determined based on project quality.
+- Individual awards range from $300 to $1000, with specific amounts determined based on project quality.
 - Exceptional projects may receive higher rewards.
 - For reference of previously funded projects, see: [Closed Issues](https://github.com/bifrost-io/mono/issues?q=is%3Aissue%20state%3Aclosed)
 - Total prize pool status:  [Mimir Bifrost Grant Fund](https://app.mimir.global/?address=136qTNfobHieiT4CHYLwNcrjUj92YBYV8BViaj49LCx5AW5z&network=bifrost-polkadot&tab=asset)
@@ -77,5 +77,5 @@ To achieve this, you can:
 ## Timeline
 ⏰ Sep 11 —— Hackathon registration begins  
 ⏳ Oct 20 —— Early-bird registration deadline  
-📅 Oct 27 —— Code submission deadline  
+📅 Oct 27 —— Code submission deadline  `
 💻 Oct 30 —— Demo Day（Online）
