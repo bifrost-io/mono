@@ -50,6 +50,7 @@ To achieve this, you can:
   - Wait for payout
 
 ## Resources
+- Short video explainer: [Youtube](https://youtu.be/44ZAQX2FwNs?si=pzhHUiQQ-_tUJegF)
 - Docs for human: [https://docs.bifrost.io](https://docs.bifrost.io) 
 - Mono repo: [https://github.com/bifrost-io/mono](https://github.com/bifrost-io/mono)
 - Builder program: [https://github.com/bifrost-io/mono/tree/main/builder-program](https://github.com/bifrost-io/mono/tree/main/builder-program)
