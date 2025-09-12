@@ -4,22 +4,26 @@
 Bifrost is a Liquid Staking app-chain tailored for all blockchains, utilizing decentralized cross-chain interoperability to empower users to earn staking rewards and DeFi yields with flexibility, liquidity, and high security across multiple chains.
 
 ## Challenge details
-**Create a unique and optimal UX for interacting with Bifrost Liquid Staking Tokens available on many chains**
+**Design and implement a novel and high-quality user experience for interacting with Bifrost’s widely used liquid staking tokens in a multi-chain environment on Polkadot.** 
+
+We encourage participating teams to prioritize a user-centric perspective, creating smooth and intuitive front-end interaction flows that support functions such as minting, redeeming, and real-time status tracking of liquid staking tokens.
 
 To achieve this, you can:
-- Create a new frontend experience for mint/redeem/track with Bifrost Liquid Staking Tokens
+- Building a new front-end interaction interface to optimize the overall user journey of Bifrost liquid staking
+- Enabling visual monitoring and management of staked assets across multiple chains
+- Designing clear and user-friendly data display and operation feedback mechanisms
 
 ## Judging criteria
-- **Originality**: How unique and innovative is the UX approach?
-- **User Experience**: How easy is the app to use?
-- **Technical Implementation**: How well is the app implemented?
+- **Originality**: Whether the solution demonstrates innovation and differentiated design
+- **User Experience**: Smoothness of interaction, clarity of visuals, and ease of use of functions
+- **Technical Implementation**: Code completeness, architectural rationality, and functional stability
 
-**Note:** Bifrost does not discourage the use of AI. But be mindful of the issue that AI generated code could be.
+**Note:** AI-assisted development is allowed. However, please note that AI-generated content may have potential issues. Use it cautiously and conduct your own code review.
 
 ## Requirements
-- Fully open source is a requirement so please include all the relevant repos in your submission.
-- You can submit multiple times for the same project for additional grants but each submission should have a key improvement to core features.
-- Your project should be deployed on a compatible testnet or mainnet. Check the [list](https://docs.bifrost.io/for-builders/build-with-slpx/supported-networks) here.
+- The project must be fully open-source. All relevant code repository links must be provided upon submission.
+- The same project may be submitted multiple times with optimized versions, but each submission must demonstrate key functional improvements.
+- The project must be deployed on a Bifrost-compatible testnet or mainnet. In essence, Passet Hub and Moonbase Alpha (Moonbeam Testnet).
 
 ## Submission guidelines
 - Go to the Issue section for this GitHub repo: https://github.com/bifrost-io/mono/issues
@@ -54,8 +58,23 @@ To achieve this, you can:
 - Ask any questions by tagging [@FrostyLst](https://x.com/FrostyLst)
 
 ## Prizes
-- $300 - $1000 depending on the quality of the submission (generally each submission is within range). If your submission is beyond expectation, we will increase payout accordingly.
-- Check the `closed` issues tab for more details [https://github.com/bifrost-io/mono/issues?q=is%3Aissue%20state%3Aclosed](https://github.com/bifrost-io/mono/issues?q=is%3Aissue%20state%3Aclosed)
-- The public pot is viewable on [Mimir Bifrost Grant Fund](https://app.mimir.global/?address=136qTNfobHieiT4CHYLwNcrjUj92YBYV8BViaj49LCx5AW5z&network=bifrost-polkadot&tab=asset)
-## Post hackathon resources
-For participants, we will be giving more grants, technical support and a marketing intern to help you launch your project; plus we have a revenue share program for you to create a sustainable revenue stream from day one.
+- Individual awards range from 300 USDT to 1000 USDT, with specific amounts determined based on project quality.
+- Exceptional projects may receive higher rewards.
+- For reference of previously funded projects, see: [Closed Issues](https://github.com/bifrost-io/mono/issues?q=is%3Aissue%20state%3Aclosed)
+- Total prize pool status:  [Mimir Bifrost Grant Fund](https://app.mimir.global/?address=136qTNfobHieiT4CHYLwNcrjUj92YBYV8BViaj49LCx5AW5z&network=bifrost-polkadot&tab=asset)
+### 🪧 Hackathon Special Awards (Sponsored by Bifrost: 2500 USDT in BNC)
+- 🌟 Best Innovation Award: 500U × 1 winner
+- ⚙️ Best Technical Implementation Award: 500U × 1 winner
+- 🎯 Potential Award: 300U × 5 winners
+
+## Post-Hackathon Incubation Support
+- Bifrost will provide ongoing support for outstanding projects, including:
+- Additional project funding and technical guidance
+- Matching with marketing interns to assist promotion
+- Revenue sharing program to support sustainable business models
+
+## Timeline
+⏰ Sep 11 —— Hackathon registration begins
+⏳ Oct 20 —— Early-bird registration deadline
+📅 Oct 27 —— Code submission deadline
+💻 Oct 30 —— Demo Day（Online）
