@@ -75,7 +75,7 @@ To achieve this, you can:
 - Revenue sharing program to support sustainable business models
 
 ## Timeline
-⏰ Sep 11 —— Hackathon registration begins
-⏳ Oct 20 —— Early-bird registration deadline
-📅 Oct 27 —— Code submission deadline
+⏰ Sep 11 —— Hackathon registration begins  
+⏳ Oct 20 —— Early-bird registration deadline  
+📅 Oct 27 —— Code submission deadline  
 💻 Oct 30 —— Demo Day（Online）
