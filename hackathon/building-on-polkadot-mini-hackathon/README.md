@@ -57,7 +57,7 @@ To achieve this, you can:
 - AI friendly docs: [https://github.com/bifrost-io/mono/blob/main/docs](https://github.com/bifrost-io/mono/blob/main/docs) 
 - Bifrost UI kit: [https://github.com/buildstationorg/bifrost-ui-kit](https://github.com/buildstationorg/bifrost-ui-kit)
 - Bifrost Dev Kit: [https://github.com/buildstationorg/bifrost-dev-kit](https://github.com/buildstationorg/bifrost-dev-kit)
-- Ask any questions by tagging [@FrostyLst](https://x.com/FrostyLst)
+- Ask any questions by tagging [@FrostyLst](https://x.com/FrostyLst) on X.
 
 ## Prizes
 - Individual awards range from $300 to $1000, with specific amounts determined based on project quality.
