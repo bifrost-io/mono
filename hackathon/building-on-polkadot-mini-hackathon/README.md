@@ -1,4 +1,4 @@
-# Building on Polakdot Mini Hackathon
+# Dot Your Future: Create, Connect, Transform
 
 ## Context
 Bifrost is a Liquid Staking app-chain tailored for all blockchains, utilizing decentralized cross-chain interoperability to empower users to earn staking rewards and DeFi yields with flexibility, liquidity, and high security across multiple chains.
@@ -27,7 +27,7 @@ To achieve this, you can:
 
 ## Submission guidelines
 - Go to the Issue section for this GitHub repo: https://github.com/bifrost-io/mono/issues
-- Use the proposal template to create a proposal describing your idea. Include this short sentence at the end of your proposal title "- Dot Your Future: The Builder Party Hackathon".
+- Use the proposal template to create a proposal describing your idea. Include this short sentence at the end of your proposal title "- Dot Your Future: Create, Connect, Transform".
 - Upon receiving the `approved` tag for your issue, you can start working on the submission. Should be within 2-3 hours.
 - Once you are done with your submission, submit the open source GitHub repo links and deployed links for your submission in the previously created Issue.
 - Grant will be evaluated by the Grant Committee
