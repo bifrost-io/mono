@@ -55,7 +55,8 @@ To achieve this, you can:
 - Mono repo: [https://github.com/bifrost-io/mono](https://github.com/bifrost-io/mono)
 - Builder program: [https://github.com/bifrost-io/mono/tree/main/builder-program](https://github.com/bifrost-io/mono/tree/main/builder-program)
 - AI friendly docs: [https://github.com/bifrost-io/mono/blob/main/docs](https://github.com/bifrost-io/mono/blob/main/docs) 
-- Testnet kit: [https://github.com/buildstationorg/bifrost-testnetkit](https://github.com/buildstationorg/bifrost-testnetkit) 
+- Bifrost UI kit: [https://github.com/buildstationorg/bifrost-ui-kit](https://github.com/buildstationorg/bifrost-ui-kit)
+- Bifrost Dev Kit: [https://github.com/buildstationorg/bifrost-dev-kit](https://github.com/buildstationorg/bifrost-dev-kit)
 - Ask any questions by tagging [@FrostyLst](https://x.com/FrostyLst)
 
 ## Prizes
